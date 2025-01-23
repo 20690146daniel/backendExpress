@@ -1,0 +1,26 @@
+# Ignorar archivos de configuración
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignorar archivos generados
+node_modules/
+bower_components/
+.sass-cache/
+.DS_Store
+
+# Ignorar archivos de caché
+npm-debug.log*
+yarn-error.log*
+
+# Ignorar archivos de respaldo
+*.swp
+
+# Ignorar archivos temporales
+tmp/
+*.tmp
+
+# Ignorar carpetas de IDE
+.vscode/
