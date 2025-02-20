@@ -10,16 +10,15 @@ const auth = require('./routes/authRutas');
 connectDB();
 app.use(express.json());
 
-// app.use('/', routes);
 
 
-app.use('/api/index',routes);
+
 app.use((req, res, next) => {
-  console.log(req.body); // log the request body
+  console.log(req.body); // l
   next();
 });
-
 app.use('/api/auth',auth);
+app.use('/api/index',routes);
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, ()=>{
         
