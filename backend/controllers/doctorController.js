@@ -13,4 +13,4 @@ const ConsultarDoctor = async (req, res) => {
 
 
 
-    module.exports = { ConsultarDoctor };
+    module.exports =  ConsultarDoctor ;

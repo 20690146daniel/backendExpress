@@ -2,6 +2,10 @@ const User = require ('../models/user_model');
 
 const bcrypt = require('bcrypt');
 
+const jwt = require('jsonwebtoken');
+
+
+
 
 const registerUser = async (nombre, correo, contrasena) => {
     if (!nombre || !correo || !contrasena) {
@@ -26,6 +30,7 @@ const findUserByEmail = async (email) => {
 const validatePassword = async (password, hashedPassword) => {
   return await bcrypt.compare(password, hashedPassword);
 };
+
 
 module.exports = {
     registerUser,
